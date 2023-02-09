@@ -21,7 +21,7 @@ function DisplayWeather(props) {
                 </span>
 
                 <h1>
-                    {Math.floor(data.main.temp - 271.15)}
+                    {Math.floor(data.main.temp - 273.15)}
                     <sup>o </sup>C
                 </h1>
                 <img className="weather-icon" src={iconurl} alt='' srcSet='' />
@@ -37,8 +37,8 @@ function DisplayWeather(props) {
                             </td>
                             <td>
                                 <span>
-                                    {Math.floor(data.main.temp_max - 271.15)} / 
-                                    {Math.floor(data.main.temp_min - 271.15)}
+                                    {Math.floor(data.main.temp_max - 273.15)} / 
+                                    {Math.floor(data.main.temp_min - 273.15)}
                                 </span>
                             </td>
                         </tr>
