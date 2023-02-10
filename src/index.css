@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #ff5d7a;
+  background-color: rgba(255, 192, 203, 0.834);
   font-family: 'roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -20,18 +20,19 @@ body {
 .weather {
   border: 1px solid rgb(255, 152, 169);
   border-radius: 20px;
-  background-color: pink;
+  background-color: #ff8ba0;
   padding: 20px 20px 20px 20px;
 }
 
 .weather .title {
-  font-size: 2rem;
-  letter-spacing: 2px;
-  background-color: rgba(255, 152, 169, 0.8);
-  padding: 10px 10px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  background-color: pink;
+  padding: 10px 20px;
   border: none;
   border-radius: 20px;
-  color: #eff;
+  color: #eef;
+  text-transform: uppercase;
 }
 
 .weather form input {
@@ -39,10 +40,14 @@ body {
   margin-top: 30px;
   margin-bottom: 5px;
   padding: 10px 20px;
-  background-color: peachpuff;
-  color: #333;
+  background-color: pink;
+  color: #fff;
   border: none;
   border-radius: 20px;
+}
+
+.weather form input::placeholder {
+  color: #fff;
 }
 
 .weather form input:focus {
@@ -51,15 +56,21 @@ body {
 
 .weather form .getweather {
   margin-left: 10px;
+  cursor: pointer;
   padding: 15px 15px;
   border: 1px solid pink;
-  color: #333;
+  color: #eee;
+  text-transform: uppercase;
   border-radius: 50%; 
-  background-color: peachpuff;
+  background-color: pink;
+}
+
+.weather form .getweather:hover {
+  transform: scale(1.02);
 }
 
 .weather form .getweather:active {
-  transform: scale(0.98);
+  transform: translateY(4%);
 }
 
 .displayweather {
