@@ -17,7 +17,7 @@ function DisplayWeather(props) {
                 </h4>
 
                 <span className='cardsubtitle'>
-                    Weather{' '}as of {new Date().toLocaleTimeString()}
+                    Weather{' '}as of {new Date().toLocaleTimeString('en-UK')}
                 </span>
 
                 <h1>
@@ -94,7 +94,7 @@ function DisplayWeather(props) {
                                 <h4>Sunrise</h4>
                             </td>
                             <td>
-                                <span>{new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</span>
+                                <span>{new Date(data.sys.sunrise * 1000).toLocaleTimeString('en-UK')}</span>
                             </td>
                         </tr>
                         <tr>
@@ -103,7 +103,7 @@ function DisplayWeather(props) {
                             </td>
                             <td>
                                 <span>
-                                    {new Date(data.sys.sunset * 1000).toLocaleTimeString()}
+                                    {new Date(data.sys.sunset * 1000).toLocaleTimeString('en-UK')}
                                 </span>
                             </td>
                         </tr>
